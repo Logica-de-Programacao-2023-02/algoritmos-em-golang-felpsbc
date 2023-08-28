@@ -16,9 +16,9 @@ func main() {
 		fmt.Println("Os números na ordem crescente são: ", num2, num1, num3)
 	} else if num1 >= num2 && num1 >= num3 && num2 <= num3 {
 		fmt.Println("Os números na ordem crescente são: ", num2, num3, num1)
-	} else if num1 >= num2 && num1 >= num3 && num2 <= num3 {
+	} else if num1 <= num2 && num1 >= num3 && num2 >= num3 {
 		fmt.Println("Os números na ordem crescente são: ", num3, num1, num2)
-	} else if num1 >= num2 && num1 >= num3 && num2 >= num3 {
+	} else {
 		fmt.Println("Os números na ordem crescente são: ", num3, num2, num1)
 	}
 }
