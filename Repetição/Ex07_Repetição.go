@@ -4,15 +4,16 @@ import "fmt"
 
 func main() {
 
-	var numero, anterior, sucessor int
-
-	fmt.Println("Escreva um número: ")
-	fmt.Scan(&numero)
-
-	anterior = numero - 1
-	sucessor = numero + 1
-
-	fmt.Println("O número anterior é :", anterior)
-	fmt.Println("O número sucessor é :", sucessor)
+	for i := 1; i <= 100; i++ {
+		if i%3 == 0 && i%5 == 0 {
+			fmt.Println("FizzBuzz")
+		} else if i%3 == 0 {
+			fmt.Println("Fizz")
+		} else if i%5 == 0 {
+			fmt.Println("Buzz")
+		} else {
+			fmt.Println(i)
+		}
+	}
 
 }
