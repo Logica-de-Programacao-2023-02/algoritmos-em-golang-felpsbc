@@ -11,7 +11,8 @@ func main() {
 	fmt.Scan(&altura)
 	altura2 = altura * altura
 	imc = peso / altura2
-	fmt.Println("Seu imc é:", imc)
+	fmt.Printf("Seu imc é: %.2f", imc)
+	fmt.Println()
 
 	if imc < 18.5 {
 		fmt.Println("Você está abaixo do peso")
