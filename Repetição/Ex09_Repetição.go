@@ -21,6 +21,6 @@ func main() {
 		media := soma / div
 		fmt.Printf("A média aritmética é: %.2f\n", media)
 	} else {
-		fmt.Println("Nenhum número foi inserido.")
+		fmt.Println("não houve nenhum número inserido.")
 	}
 }
